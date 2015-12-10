@@ -17,6 +17,7 @@
 		8F65C6DD1C18DE4B005D8E70 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F65C6DB1C18DE4B005D8E70 /* Main.storyboard */; };
 		8F65C6DF1C18DE4C005D8E70 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F65C6DE1C18DE4B005D8E70 /* Assets.xcassets */; };
 		8F65C6E21C18DE4C005D8E70 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F65C6E01C18DE4C005D8E70 /* LaunchScreen.storyboard */; };
+		8F95CA071C19FEFE0030024D /* triangleCrop.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F95CA061C19FEFE0030024D /* triangleCrop.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		8F65C6DE1C18DE4B005D8E70 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8F65C6E11C18DE4C005D8E70 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8F65C6E31C18DE4C005D8E70 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8F95CA061C19FEFE0030024D /* triangleCrop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = triangleCrop.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 				8F5CD3AE1C18F5070049EFC0 /* ThirdViewController.swift */,
 				8F5CD3B41C193F170049EFC0 /* triangle1.png */,
 				8F5CD3B21C19365E0049EFC0 /* triangle.png */,
+				8F95CA061C19FEFE0030024D /* triangleCrop.png */,
 				8F65C6DE1C18DE4B005D8E70 /* Assets.xcassets */,
 				8F65C6E01C18DE4C005D8E70 /* LaunchScreen.storyboard */,
 				8F65C6E31C18DE4C005D8E70 /* Info.plist */,
@@ -142,6 +145,7 @@
 				8F5CD3B31C19365F0049EFC0 /* triangle.png in Resources */,
 				8F65C6DF1C18DE4C005D8E70 /* Assets.xcassets in Resources */,
 				8F65C6DD1C18DE4B005D8E70 /* Main.storyboard in Resources */,
+				8F95CA071C19FEFE0030024D /* triangleCrop.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

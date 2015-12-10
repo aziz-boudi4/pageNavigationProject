@@ -20,27 +20,28 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TYz-DS-uGb">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="triangle1.png" translatesAutoresizingMaskIntoConstraints="NO" id="ebS-eX-24j">
-                                        <rect key="frame" x="80" y="83" width="20" height="20"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="triangleCrop.png" translatesAutoresizingMaskIntoConstraints="NO" id="ebS-eX-24j">
+                                        <rect key="frame" x="80" y="85" width="15" height="15"/>
                                         <animations/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Chat" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7TQ-dP-aRu">
-                                        <rect key="frame" x="71" y="51" width="38" height="21"/>
+                                        <rect key="frame" x="71" y="58" width="38" height="21"/>
                                         <animations/>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Game" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qC8-WM-phE">
-                                        <rect key="frame" x="147" y="51" width="47" height="21"/>
+                                        <rect key="frame" x="147" y="58" width="47" height="21"/>
                                         <animations/>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Roster" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rRo-zm-4EW">
-                                        <rect key="frame" x="224" y="51" width="53" height="21"/>
+                                        <rect key="frame" x="224" y="58" width="53" height="21"/>
                                         <animations/>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -50,11 +51,11 @@
                                 <animations/>
                                 <color key="backgroundColor" red="0.16078431369999999" green="0.12941176469999999" blue="0.28627450980000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="ebS-eX-24j" secondAttribute="bottom" constant="-3" id="7ZV-3q-hs8"/>
+                                    <constraint firstAttribute="bottom" secondItem="ebS-eX-24j" secondAttribute="bottom" id="7ZV-3q-hs8"/>
                                     <constraint firstAttribute="width" constant="320" id="DIK-PU-WMo"/>
                                     <constraint firstAttribute="height" constant="100" id="bB5-x0-Yiz"/>
-                                    <constraint firstItem="ebS-eX-24j" firstAttribute="top" secondItem="TYz-DS-uGb" secondAttribute="top" constant="83" id="c8o-rs-ccF"/>
-                                    <constraint firstAttribute="trailing" secondItem="ebS-eX-24j" secondAttribute="trailing" constant="220" id="cdz-NE-ldv"/>
+                                    <constraint firstItem="ebS-eX-24j" firstAttribute="top" secondItem="TYz-DS-uGb" secondAttribute="top" constant="85" id="c8o-rs-ccF"/>
+                                    <constraint firstAttribute="trailing" secondItem="ebS-eX-24j" secondAttribute="trailing" constant="225" id="cdz-NE-ldv"/>
                                     <constraint firstItem="ebS-eX-24j" firstAttribute="leading" secondItem="TYz-DS-uGb" secondAttribute="leading" constant="80" id="o1F-B2-pIu"/>
                                 </constraints>
                             </view>
@@ -153,12 +154,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="738" y="367"/>
+            <point key="canvasLocation" x="982" y="353"/>
         </scene>
-        <!--Second View Controller-->
+        <!--First View Controller-->
         <scene sceneID="Isb-zR-72T">
             <objects>
-                <viewController id="VpP-32-6gH" customClass="SecondViewController" customModule="pageNavigationProject" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="VpP-32-6gH" customClass="FirstViewController" customModule="pageNavigationProject" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Heg-NF-7YA"/>
                         <viewControllerLayoutGuide type="bottom" id="99Z-h2-Z7U"/>
@@ -169,8 +170,21 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1hl-7N-47b">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="468"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Page number 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dCb-bg-cev">
+                                        <rect key="frame" x="84" y="224" width="134" height="24"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
                                 <animations/>
                                 <color key="backgroundColor" red="0.5490196078431373" green="0.5490196078431373" blue="0.5490196078431373" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="dCb-bg-cev" firstAttribute="centerX" secondItem="1hl-7N-47b" secondAttribute="centerX" constant="-9" id="0zk-Vw-0ej"/>
+                                    <constraint firstItem="dCb-bg-cev" firstAttribute="centerY" secondItem="1hl-7N-47b" secondAttribute="centerY" constant="2" id="O2v-g5-JNc"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <animations/>
@@ -185,12 +199,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mN3-BZ-W5D" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="340" y="1170"/>
+            <point key="canvasLocation" x="-4" y="1192"/>
         </scene>
-        <!--First View Controller-->
+        <!--Second View Controller-->
         <scene sceneID="lfM-aQ-iud">
             <objects>
-                <viewController id="oCl-Oe-WQy" customClass="FirstViewController" customModule="pageNavigationProject" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="oCl-Oe-WQy" customClass="SecondViewController" customModule="pageNavigationProject" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ZYk-eb-Q3W"/>
                         <viewControllerLayoutGuide type="bottom" id="XcW-9I-Cn4"/>
@@ -201,8 +215,21 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="K85-YD-Rc8">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="468"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Page number 2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7pv-DT-qUe">
+                                        <rect key="frame" x="81" y="224" width="136" height="24"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
                                 <animations/>
                                 <color key="backgroundColor" red="0.5490196078431373" green="0.5490196078431373" blue="0.5490196078431373" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="7pv-DT-qUe" firstAttribute="centerY" secondItem="K85-YD-Rc8" secondAttribute="centerY" constant="2" id="GXg-Cp-PBr"/>
+                                    <constraint firstItem="7pv-DT-qUe" firstAttribute="centerX" secondItem="K85-YD-Rc8" secondAttribute="centerX" constant="-11" id="gh4-s7-b9w"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <animations/>
@@ -217,7 +244,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DMB-F0-e6u" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-109" y="1136"/>
+            <point key="canvasLocation" x="373" y="1192"/>
         </scene>
         <!--Third View Controller-->
         <scene sceneID="jJz-KS-OSe">
@@ -233,8 +260,21 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TA4-sf-oP2">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="468"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Page number 3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rDb-5S-CYn">
+                                        <rect key="frame" x="82" y="224" width="137" height="24"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
                                 <animations/>
                                 <color key="backgroundColor" red="0.5490196078431373" green="0.5490196078431373" blue="0.5490196078431373" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="rDb-5S-CYn" firstAttribute="centerY" secondItem="TA4-sf-oP2" secondAttribute="centerY" constant="2" id="9gY-oL-la5"/>
+                                    <constraint firstItem="rDb-5S-CYn" firstAttribute="centerX" secondItem="TA4-sf-oP2" secondAttribute="centerX" constant="-9.5" id="Hiq-Ui-M8d"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <animations/>
@@ -253,6 +293,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="triangle1.png" width="512" height="512"/>
+        <image name="triangleCrop.png" width="512" height="471"/>
     </resources>
 </document>
