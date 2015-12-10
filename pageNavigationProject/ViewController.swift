@@ -8,8 +8,9 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UIScrollViewDelegate {
 
+  @IBOutlet weak var headerView: UIView!
   @IBOutlet weak var scrollView: UIScrollView!
 
   override func viewDidLoad() {

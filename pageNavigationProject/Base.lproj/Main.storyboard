@@ -17,6 +17,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="960" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TYz-DS-uGb">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+                                <animations/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="320" id="DIK-PU-WMo"/>
+                                    <constraint firstAttribute="height" constant="100" id="bB5-x0-Yiz"/>
+                                </constraints>
+                            </view>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lzr-Ks-0OC">
                                 <rect key="frame" x="0.0" y="100" width="960" height="468"/>
                                 <subviews>
@@ -31,17 +40,6 @@
                                             <segue destination="VpP-32-6gH" kind="embed" id="reQ-QQ-jHQ"/>
                                         </connections>
                                     </containerView>
-                                    <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DcE-Qg-zQL" userLabel="secondContainerView">
-                                        <rect key="frame" x="320" y="0.0" width="320" height="498"/>
-                                        <animations/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="498" id="WSa-Ga-4xM"/>
-                                            <constraint firstAttribute="width" constant="320" id="Yx0-2r-Jdn"/>
-                                        </constraints>
-                                        <connections>
-                                            <segue destination="oCl-Oe-WQy" kind="embed" id="yU8-Y2-G6G"/>
-                                        </connections>
-                                    </containerView>
                                     <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wgh-gN-VrN" userLabel="thirdContainerView">
                                         <rect key="frame" x="640" y="0.0" width="320" height="498"/>
                                         <animations/>
@@ -53,9 +51,20 @@
                                             <segue destination="Tv4-nX-QlG" kind="embed" id="O6B-gS-663"/>
                                         </connections>
                                     </containerView>
+                                    <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DcE-Qg-zQL" userLabel="secondContainerView">
+                                        <rect key="frame" x="320" y="0.0" width="320" height="498"/>
+                                        <animations/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="498" id="WSa-Ga-4xM"/>
+                                            <constraint firstAttribute="width" constant="320" id="Yx0-2r-Jdn"/>
+                                        </constraints>
+                                        <connections>
+                                            <segue destination="oCl-Oe-WQy" kind="embed" id="yU8-Y2-G6G"/>
+                                        </connections>
+                                    </containerView>
                                 </subviews>
                                 <animations/>
-                                <color key="backgroundColor" red="0.16078431369999999" green="0.12941176469999999" blue="0.28627450980000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstItem="Wgh-gN-VrN" firstAttribute="width" secondItem="DcE-Qg-zQL" secondAttribute="width" id="2ak-li-yCd"/>
                                     <constraint firstItem="Wgh-gN-VrN" firstAttribute="top" secondItem="Lzr-Ks-0OC" secondAttribute="top" id="3u5-PW-O8y"/>
@@ -75,6 +84,15 @@
                                     <constraint firstAttribute="bottom" secondItem="DcE-Qg-zQL" secondAttribute="bottom" id="rUf-cf-wzt"/>
                                     <constraint firstItem="Wgh-gN-VrN" firstAttribute="height" secondItem="DcE-Qg-zQL" secondAttribute="height" id="taW-LW-gQF"/>
                                 </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="EMI-7K-TDd"/>
+                                        <exclude reference="cgJ-v3-3Fn"/>
+                                        <exclude reference="bkW-1g-95k"/>
+                                        <exclude reference="fyK-kF-gbw"/>
+                                        <exclude reference="taW-LW-gQF"/>
+                                    </mask>
+                                </variation>
                                 <connections>
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="BEP-bA-AJy"/>
                                 </connections>
@@ -83,21 +101,25 @@
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="Lzr-Ks-0OC" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="3hq-7z-wmA"/>
                             <constraint firstItem="Lzr-Ks-0OC" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="5da-EI-cKz"/>
-                            <constraint firstItem="Lzr-Ks-0OC" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="100" id="8ye-cC-Jks"/>
+                            <constraint firstItem="TYz-DS-uGb" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="BT5-Of-VDW"/>
                             <constraint firstAttribute="trailing" secondItem="Lzr-Ks-0OC" secondAttribute="trailing" id="JWC-QN-g6o"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Lzr-Ks-0OC" secondAttribute="bottom" id="anb-Bf-8f3"/>
+                            <constraint firstItem="Lzr-Ks-0OC" firstAttribute="top" secondItem="TYz-DS-uGb" secondAttribute="bottom" id="lGS-bO-ZOf"/>
+                            <constraint firstItem="TYz-DS-uGb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="rq9-Hc-i3S"/>
                         </constraints>
                     </view>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="960" height="568"/>
                     <connections>
+                        <outlet property="headerView" destination="TYz-DS-uGb" id="7Ij-4L-LB8"/>
                         <outlet property="scrollView" destination="Lzr-Ks-0OC" id="nfa-JC-7hj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="313" y="361"/>
+            <point key="canvasLocation" x="739" y="370"/>
         </scene>
         <!--Second View Controller-->
         <scene sceneID="Isb-zR-72T">
@@ -110,7 +132,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1hl-7N-47b">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="498"/>
                                 <animations/>
-                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="0.16078431369999999" green="0.12941176469999999" blue="0.28627450980000002" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                         </subviews>
                         <animations/>
@@ -138,7 +160,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="K85-YD-Rc8">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="498"/>
                                 <animations/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="0.65490196078431373" green="0.96470588235294119" blue="0.2627450980392157" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                         </subviews>
                         <animations/>
@@ -153,7 +175,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DMB-F0-e6u" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-130" y="1170"/>
+            <point key="canvasLocation" x="-109" y="1136"/>
         </scene>
         <!--Third View Controller-->
         <scene sceneID="jJz-KS-OSe">
@@ -166,7 +188,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TA4-sf-oP2">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="498"/>
                                 <animations/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="0.52156862749999999" green="0.52156862749999999" blue="0.52156862749999999" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                         </subviews>
                         <animations/>
