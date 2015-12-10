@@ -26,14 +26,14 @@
                                     <constraint firstAttribute="height" constant="100" id="bB5-x0-Yiz"/>
                                 </constraints>
                             </view>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lzr-Ks-0OC">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" directionalLockEnabled="YES" bounces="NO" alwaysBounceHorizontal="YES" pagingEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Lzr-Ks-0OC">
                                 <rect key="frame" x="0.0" y="100" width="960" height="468"/>
                                 <subviews>
                                     <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="50U-hC-nAw" userLabel="firstContainerView">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="498"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="468"/>
                                         <animations/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="498" id="HKY-OJ-jRv"/>
+                                            <constraint firstAttribute="height" constant="468" id="HKY-OJ-jRv"/>
                                             <constraint firstAttribute="width" constant="320" id="jTE-D7-lGS"/>
                                         </constraints>
                                         <connections>
@@ -41,10 +41,10 @@
                                         </connections>
                                     </containerView>
                                     <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wgh-gN-VrN" userLabel="thirdContainerView">
-                                        <rect key="frame" x="640" y="0.0" width="320" height="498"/>
+                                        <rect key="frame" x="640" y="0.0" width="320" height="468"/>
                                         <animations/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="498" id="8cy-xc-jSV"/>
+                                            <constraint firstAttribute="height" constant="468" id="8cy-xc-jSV"/>
                                             <constraint firstAttribute="width" constant="320" id="bJK-zs-AWS"/>
                                         </constraints>
                                         <connections>
@@ -52,10 +52,10 @@
                                         </connections>
                                     </containerView>
                                     <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DcE-Qg-zQL" userLabel="secondContainerView">
-                                        <rect key="frame" x="320" y="0.0" width="320" height="498"/>
+                                        <rect key="frame" x="320" y="0.0" width="320" height="468"/>
                                         <animations/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="498" id="WSa-Ga-4xM"/>
+                                            <constraint firstAttribute="height" constant="468" id="WSa-Ga-4xM"/>
                                             <constraint firstAttribute="width" constant="320" id="Yx0-2r-Jdn"/>
                                         </constraints>
                                         <connections>
@@ -125,12 +125,16 @@
         <scene sceneID="Isb-zR-72T">
             <objects>
                 <viewController id="VpP-32-6gH" customClass="SecondViewController" customModule="pageNavigationProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Heg-NF-7YA"/>
+                        <viewControllerLayoutGuide type="bottom" id="99Z-h2-Z7U"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Ryh-vl-t3Y">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="498"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="468"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1hl-7N-47b">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="498"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="468"/>
                                 <animations/>
                                 <color key="backgroundColor" red="0.16078431369999999" green="0.12941176469999999" blue="0.28627450980000002" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
@@ -153,12 +157,16 @@
         <scene sceneID="lfM-aQ-iud">
             <objects>
                 <viewController id="oCl-Oe-WQy" customClass="FirstViewController" customModule="pageNavigationProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ZYk-eb-Q3W"/>
+                        <viewControllerLayoutGuide type="bottom" id="XcW-9I-Cn4"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="dRP-M4-oUB">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="498"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="468"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="K85-YD-Rc8">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="498"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="468"/>
                                 <animations/>
                                 <color key="backgroundColor" red="0.65490196078431373" green="0.96470588235294119" blue="0.2627450980392157" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
@@ -181,12 +189,16 @@
         <scene sceneID="jJz-KS-OSe">
             <objects>
                 <viewController id="Tv4-nX-QlG" customClass="ThirdViewController" customModule="pageNavigationProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ytk-UU-i1E"/>
+                        <viewControllerLayoutGuide type="bottom" id="COj-wJ-n9o"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="g8X-br-sTf">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="498"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="468"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TA4-sf-oP2">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="498"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="468"/>
                                 <animations/>
                                 <color key="backgroundColor" red="0.52156862749999999" green="0.52156862749999999" blue="0.52156862749999999" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
