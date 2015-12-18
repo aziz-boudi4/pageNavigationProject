@@ -17,6 +17,7 @@
 		8F65C6DD1C18DE4B005D8E70 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F65C6DB1C18DE4B005D8E70 /* Main.storyboard */; };
 		8F65C6DF1C18DE4C005D8E70 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F65C6DE1C18DE4B005D8E70 /* Assets.xcassets */; };
 		8F65C6E21C18DE4C005D8E70 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F65C6E01C18DE4C005D8E70 /* LaunchScreen.storyboard */; };
+		8F8B8B981C248DD700AEAF0E /* Triangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F8B8B971C248DD700AEAF0E /* Triangle.swift */; };
 		8F95CA071C19FEFE0030024D /* triangleCrop.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F95CA061C19FEFE0030024D /* triangleCrop.png */; };
 /* End PBXBuildFile section */
 
@@ -33,6 +34,7 @@
 		8F65C6DE1C18DE4B005D8E70 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8F65C6E11C18DE4C005D8E70 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8F65C6E31C18DE4C005D8E70 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8F8B8B971C248DD700AEAF0E /* Triangle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Triangle.swift; sourceTree = "<group>"; };
 		8F95CA061C19FEFE0030024D /* triangleCrop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = triangleCrop.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -69,6 +71,7 @@
 				8F65C6D71C18DE4B005D8E70 /* AppDelegate.swift */,
 				8F65C6D91C18DE4B005D8E70 /* ViewController.swift */,
 				8F65C6DB1C18DE4B005D8E70 /* Main.storyboard */,
+				8F8B8B971C248DD700AEAF0E /* Triangle.swift */,
 				8F5CD3AA1C18F4D60049EFC0 /* FirstViewController.swift */,
 				8F5CD3AC1C18F4F20049EFC0 /* SecondViewController.swift */,
 				8F5CD3AE1C18F5070049EFC0 /* ThirdViewController.swift */,
@@ -159,6 +162,7 @@
 				8F5CD3AD1C18F4F20049EFC0 /* SecondViewController.swift in Sources */,
 				8F5CD3AB1C18F4D60049EFC0 /* FirstViewController.swift in Sources */,
 				8F5CD3AF1C18F5070049EFC0 /* ThirdViewController.swift in Sources */,
+				8F8B8B981C248DD700AEAF0E /* Triangle.swift in Sources */,
 				8F65C6DA1C18DE4B005D8E70 /* ViewController.swift in Sources */,
 				8F65C6D81C18DE4B005D8E70 /* AppDelegate.swift in Sources */,
 			);

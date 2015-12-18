@@ -13,14 +13,16 @@ class ViewController: UIViewController, UIScrollViewDelegate {
   @IBOutlet weak var headerView: UIView!
   @IBOutlet weak var scrollView: UIScrollView!
 
+  @IBOutlet weak var triangleView: Triangle!
   @IBOutlet weak var triangle: UIImageView!
   @IBOutlet weak var triangleTrailerConstraint: NSLayoutConstraint!
 
 
+
   override func viewDidLoad() {
     super.viewDidLoad()
-    print(triangle.frame.origin.x)
-    // Do any additional setup after loading the view, typically from a nib.
+    view.layoutIfNeeded()
+
   }
 
   override func didReceiveMemoryWarning() {
@@ -35,7 +37,7 @@ extension ViewController {
 
   func scrollViewDidScroll(scrollView: UIScrollView) {
 //    print(scrollView.contentOffset.x)
-    triangle.frame.origin.x = 80 + scrollView.contentOffset.x / 4
+    triangleView.frame.origin.x = 80 + scrollView.contentOffset.x / 4
     view.layoutIfNeeded()
   }
 
